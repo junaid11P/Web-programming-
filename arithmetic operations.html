@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Arithmatic Operations</title>
+<script type="text/javascript">
+var num1,num2,res;
+function add()
+{
+num1=parseFloat(document.myform.n1.value);
+num2=parseFloat(document.myform.n2.value);
+res=num1+num2;
+document.myform.r.value=res;
+}
+function sub()
+{
+num1=parseFloat(document.myform.n1.value);
+num2=parseFloat(document.myform.n2.value);
+res=num1-num2;
+document.myform.r.value=res;
+}
+function mul()
+{
+num1=parseFloat(document.myform.n1.value);
+num2=parseFloat(document.myform.n2.value);
+
+3
+res=num1*num2;
+document.myform.r.value=res;
+}
+function devide()
+{
+num1=parseFloat(document.myform.n1.value);
+num2=parseFloat(document.myform.n2.value);
+res=num1/num2;
+document.myform.r.value=res;
+}
+</script>
+</head>
+<body>
+<form name="myform">
+<center><h1><u>Arithmatic Operations</u></h1>
+Enter a number in each textbox<br><br>
+Number1:<input type="text" name="n1"><br><br>
+Number2:<input type="text" name="n2"><br>
+<br>
+<input type="button" value="add" onclick="add()">
+<input type="button" value="sub" onclick="sub()">
+<input type="button" value="mul" onclick="mul()">
+<input type="button" value="devide" onclick="devide()"><br><br>
+Result is:<input type="text" name="r"></center>
+</form>
+</body>
+</html>

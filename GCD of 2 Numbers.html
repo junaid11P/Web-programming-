@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>GCD OF TWO NUMBERS</title>
+<script type="text/javascript">
+function gcd()
+{
+var x,y;
+x=parseInt(document.myform.n1.value);
+y=parseInt(document.myform.n2.value);
+while(x!=y)
+{
+if(x>y)
+x=x-y;
+else
+y=y-x;
+}
+document.myform.r.value=x;
+}
+</script>
+</head>
+
+10
+<body>
+<form name="myform">
+<center><h1><u>PROGRAM TO CALCULATE GCD OF TWO NUMBERS</u></h1>
+ENTER TWO NUMBER<br><br>
+Number1:<input type="text"name="n1"><br><br>
+Number2:<input type="text"name="n2"><br><br>
+<input type="button" value="get GCD" onClick="gcd()">
+<br><br>
+GCD is:<input type="text" name="r"></center>
+</form>
+</body>
+</html>
